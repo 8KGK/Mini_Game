@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Грамотність</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+<body>
+    
+    <div class="parent">
+        <div class="div1">Гра на Грамотність</div>
+        <div class="div2">Потрібно вибрати правильну відповідь <marquee>(9 - 10 правильних відповідей = 5 балів, 7-8 =
+                4, 5-6 = 3, менше 5 = 2)</marquee>
+        </div>
+        <div class="div3" id="score">Кількість правильних відповідей: 0</div>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , true)">науковий</button>
+        <button class="answer" onclick="checkAnswer(this , false)">наукови́й</button>
+        <button class="answer" onclick="checkAnswer(this , false)">науковиiй</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">незалежність</button>
+        <button class="answer" onclick="checkAnswer(this , true)">незале́жність</button>
+        <button class="answer" onclick="checkAnswer(this , false)">незавжди́нність</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">підприємство</button>
+        <button class="answer" onclick="checkAnswer(this , true)">підприє́мство</button>
+        <button class="answer" onclick="checkAnswer(this , false)">підприемство</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , true)">відповідальність</button>
+        <button class="answer" onclick="checkAnswer(this , false)">відпо́відальність</button>
+        <button class="answer" onclick="checkAnswer(this , false)">відповіда́льність</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">зележність</button>
+        <button class="answer" onclick="checkAnswer(this , false)">зале́жність</button>
+        <button class="answer" onclick="checkAnswer(this , true)">залежність</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">розуміння</button>
+        <button class="answer" onclick="checkAnswer(this , true)">розумiнн</button>
+        <button class="answer" onclick="checkAnswer(this , false)">розумі́ння</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , true)">обґрунтування</button>
+        <button class="answer" onclick="checkAnswer(this , false)">обгрунтуванна</button>
+        <button class="answer" onclick="checkAnswer(this , false)">обґрунтувауння</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">непередбачива́нніст</button>
+        <button class="answer" onclick="checkAnswer(this , false)">непередбачувани́сть</button>
+        <button class="answer" onclick="checkAnswer(this , true)">непередбачуваність</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">супере́чливість</button>
+        <button class="answer" onclick="checkAnswer(this , true)">суперечливість</button>
+        <button class="answer" onclick="checkAnswer(this , false)">суперечливiсть</button>
+    </div>
+
+    <div class="game">
+        <p id="question">Оберіть правильне слово:</p>
+        <button class="answer" onclick="checkAnswer(this , false)">адептація</button>
+        <button class="answer" onclick="checkAnswer(this , false)">адаптация</button>
+        <button class="answer" onclick="checkAnswer(this , true)">адаптація</button>
+    </div>
+
+    <div id="result"></div>
+</body>
+
+</html>

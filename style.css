@@ -1,0 +1,101 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/gradient-background-4096x2652-11832.jpg);
+    background-size:cover;
+    
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 8px;
+    position: relative;
+}
+
+.div1,.div2,.div3 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    padding: 2rem 3rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+.div1 {
+    grid-column: 1 / span 3;
+}
+
+.div3 {
+    grid-column: 3;
+}
+
+.game {
+width: 50%;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgba(214, 16, 221, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    filter: blur(5px);
+    transition: filter 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.game:hover {
+    filter: blur(0);
+    backdrop-filter: blur(0);
+}
+    
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor:crosshair;
+    border: 2px solid rgba(11, 7, 223, 0.5);
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #04f524;
+}
+
+button.correct {
+    background-color: green;
+}
+
+button.incorrect {
+    background-color: red;
+}
+
+#result{ 
+    width: 50%;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    filter: blur(5px);
+    transition: filter 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+#result:hover{
+    filter: blur(0);
+    backdrop-filter: blur(0);
+}
